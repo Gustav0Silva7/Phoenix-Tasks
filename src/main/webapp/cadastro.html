@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assinatura - Phoenix Tasks</title>
+<link rel = "stylesheet" href = "cadastro.css">
+<link rel="icon" href="Imagens/logo.ico" type="image/x-icon">
+</head>
+<body>
+<div class = "container_form">
+<div class = "titulo">Faça aqui a sua Assinatura</div>
+<form action = "adcusuario.jsp" method = "post">
+<div class = "info">
+<div class = "input">
+<span class = "detalhes">Nome</span>
+<input type = "text" name = "nome" required placeholder = "Nome Completo">
+</div>
+<div class = "input">
+<span class = "detalhes">Data de Nascimento</span>
+<input type = "date" name = "data_nascimento" required>
+</div>
+<div class = "input">
+<span class = "detalhes">Genero</span>
+<select name = "sexo">
+<option value = "masculino">Masculino</option>
+<option value = "feminino">Feminino</option>
+<option value = "nao_binario">Não Binário</option>
+</select>
+</div>
+<div class = "input">
+<span class = "detalhes">Email</span>
+<input type = "email" name = "email" required placeholder = "usuario@email.com">
+</div>
+<div class = "input">
+<span class = "detalhes">Senha</span>
+<input type = "password" name = "senha" required placeholder = "Password">
+</div>
+<div class = "input">
+<span class = "detalhes">Confirmar Senha</span>
+<input type = "password" required placeholder = "Máximo 10 caracteres">
+</div>
+<div class = "input_button">
+<input type = "submit" value = "Assinar">
+</div>
+<div class = "input">
+<p>Já possui uma assinatura? Faça o <a href = "login.jsp">Login</a></p>
+</div>
+</div>
+</form>
+</div>
+
+</body>
+</html>

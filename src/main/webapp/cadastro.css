@@ -1,0 +1,106 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border box;
+font-family: 'Roboto', sans-serif;
+}
+body{
+	display: flex;
+	height: 100vh;
+	padding: 10px;
+	justify-content: center;
+	align-items:center;
+	background: #0c0016;
+}
+.container_form{
+	max-width: 700px;
+	width: 100%;
+	background: #E6EBEC;
+	padding: 25px 30px;
+	border-radius: 25px;
+}
+.container_form .titulo{
+	font-size: 25px;
+	font-weight:600;
+	color: #070608;
+}
+.container_form form .info{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.info .input{
+	margin: 20px 0 12px 0;
+	width: calc(100% / 2 - 20px);
+}
+.info .input input, .info .input select{
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #0c0016;
+	padding-left: 15px;
+	font-size: 16px;
+}
+.info .input select{
+width: 345px;
+
+}
+.info .input .detalhes{
+	display: block;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.info .input input:focus, .info .input select:focus{
+	border-color: #F18803;
+}
+.info .input input[type="radio"]{
+	display: none;
+}
+.input_button{
+	height:45px;
+	width: 800px;
+	margin: 45px 0;
+}
+.input_button input{
+	height: 100%;
+	width: 100%;
+	outline: none;
+	color: #E6EBEC;
+	background: #0c0016;
+	border: 0;
+	font-size: 16px;
+}
+.input p, .input a{
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 16px;
+}
+.input a{
+	text-decoration: none;
+	font-weight:600;
+	color: #0c0016;
+}
+@media (max-width: 768px){
+	.container_form{
+	max-width: 100%;
+	}
+	.info .input{
+	margin-bottom: 15px;
+	width: 100%;
+	}
+	.info .input input{
+	width: 96%;
+	}
+	.info .input select{
+	width: 100%;
+	}
+	.info{
+	max-height: 300px;
+	overflow-y:scroll;
+	}
+}
