@@ -29,7 +29,7 @@ public class Login extends HttpServlet {
 		Usuario.setSenha(senha);
 		try {
 			if(UsuarioDao.loginUsuario(Usuario)) {
-				response.sendRedirect("HTML/index.html");
+				response.sendRedirect("index.html");
 			}
 			else {
 				HttpSession session = request.getSession();
